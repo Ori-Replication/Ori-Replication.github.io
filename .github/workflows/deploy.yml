@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./nextjs_profolio  # 设置默认工作目录
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,6 +28,7 @@ jobs:
         with:
           node-version: "18"
           cache: 'npm'
+          cache-dependency-path: './nextjs_profolio/package-lock.json'  # 指定 package-lock.json 的路径
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
@@ -38,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./out
+          path: ./nextjs_profolio/out  # 更新构建输出目录的路径
 
   deploy:
     environment:

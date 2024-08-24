@@ -4,3 +4,9 @@ publish: true
 tags:
 ---
 # Welcome to the Quartz of Ori (Mutian Hong)!
+## Blogs
+[[010 Blogs/窥见肿瘤与癌症本质的一隅——听徐鹰先生报告有感|窥见肿瘤与癌症本质的一隅]]
+[[010 Blogs/A Glimpse into the Essence of Tumors and Cancer|A Glimpse into the Essence of Tumors and Cancer]]
+## Notes
+
+## Tutorials

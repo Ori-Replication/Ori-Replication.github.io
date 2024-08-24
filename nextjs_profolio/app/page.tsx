@@ -13,7 +13,7 @@ export default function Home() {
           [
             {name: "Home", link: "/", icon: <FaHome />},
             {name: "My CV", link: "/", icon: <FaHome />},
-            {name: "My Blogs", link: "/blog/", icon: <FaHome />}, 
+            {name: "My Blogs", link: "/blog/Index", icon: <FaHome />}, 
           ]
         }
         

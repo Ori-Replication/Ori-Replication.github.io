@@ -1,86 +1,93 @@
+# 部署 Next.js 和 Quartz 到 GitHub Pages
 name: Deploy Next.js and Quartz to Pages
 
+# 触发条件：推送到 master 分支或手动触发
 on:
   push:
     branches: ["master"]
   workflow_dispatch:
 
+# 权限设置
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# 并发控制
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
+  # 构建 Next.js 项目
   build-nextjs:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./nextjs_profolio
     steps:
-      - name: Checkout
+      - name: Checkout # 检出代码
         uses: actions/checkout@v4
-      - name: Setup Node
+      - name: Setup Node # 设置 Node.js 环境
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: 'npm'
           cache-dependency-path: './nextjs_profolio/package-lock.json'
-      - name: Install dependencies
+      - name: Install dependencies # 安装依赖
         run: npm ci
-      - name: Build with Next.js
+      - name: Build with Next.js # 构建 Next.js 项目
         run: npm run build
-      - name: Upload Next.js artifact
+      - name: Upload Next.js artifact # 上传 Next.js 构建产物
         uses: actions/upload-artifact@v3
         with:
           name: nextjs-build
           path: ./nextjs_profolio/out
 
+  # 构建 Quartz 项目
   build-quartz:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout # 检出代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Setup Node
+      - name: Setup Node # 设置 Node.js 环境
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Install Quartz Dependencies
+      - name: Install Quartz Dependencies # 安装 Quartz 依赖
         run: npm ci
         working-directory: ./quartz
-      - name: Build Quartz
+      - name: Build Quartz # 构建 Quartz 项目
         run: npx quartz build
         working-directory: ./quartz
-      - name: Upload Quartz artifact
+      - name: Upload Quartz artifact # 上传 Quartz 构建产物
         uses: actions/upload-artifact@v3
         with:
           name: quartz-build
           path: ./quartz/public
 
+  # 合并构建产物并部署
   combine-and-deploy:
     needs: [build-nextjs, build-quartz]
     runs-on: ubuntu-latest
     steps:
-      - name: Download Next.js artifact
+      - name: Download Next.js artifact # 下载 Next.js 构建产物
         uses: actions/download-artifact@v3
         with:
           name: nextjs-build
           path: ./combined
-      - name: Download Quartz artifact
+      - name: Download Quartz artifact # 下载 Quartz 构建产物
         uses: actions/download-artifact@v3
         with:
           name: quartz-build
           path: ./combined/blog
-      - name: Upload combined artifact
+      - name: Upload combined artifact # 上传合并后的构建产物
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./combined
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages # 部署到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
     environment:

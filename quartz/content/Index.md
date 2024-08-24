@@ -10,3 +10,4 @@ tags:
 ## Notes
 
 ## Tutorials
+[[030 Tutorials/Interpretation of the Curriculum Plan/ShanghaitechCS培养方案解读|ShanghaitechCS培养方案解读]]

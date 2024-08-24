@@ -1,3 +1,9 @@
+---
+title: ShanghaitechCS培养方案解读
+publish: true
+tags:
+---
+
 [2024级本科生培养方案 (shanghaitech.edu.cn)](https://faculty.sist.shanghaitech.edu.cn/office/Academics/Undergraduate/Degree%20Programmes/2024%20Bachelor%20Degree%20Programs%20in%20CS.htm)
 
 ![[培养方案解读_01(1).png]]

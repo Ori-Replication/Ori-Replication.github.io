@@ -134,3 +134,22 @@ function toggleCollapsedByPath(array: FolderState[], path: string) {
     entry.collapsed = !entry.collapsed
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const explorer = document.querySelector('.explorer')
+  const toggleBtn = document.createElement('button')
+  toggleBtn.innerHTML = '📁'
+  toggleBtn.classList.add('explorer-toggle')
+  document.body.appendChild(toggleBtn)
+
+  toggleBtn.addEventListener('click', () => {
+    explorer?.classList.toggle('is-active')
+  })
+
+  // 点击 explorer 外部时关闭
+  document.addEventListener('click', (e) => {
+    if (!explorer?.contains(e.target as Node) && !toggleBtn.contains(e.target as Node)) {
+      explorer?.classList.remove('is-active')
+    }
+  })
+})

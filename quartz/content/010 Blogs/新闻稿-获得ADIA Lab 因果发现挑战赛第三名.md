@@ -9,7 +9,9 @@ tags:
 阿布扎比投资局（Abu Dhabi Investment Authority, ADIA）是全球第三大的主权基金，而 ADIA Lab 是阿布扎比投资局旗下专注于金融科技、数据分析和投资研究的创新实验室。该机构致力于通过先进的技术、前沿的数据科学和量化研究，为全球投资战略提供深刻洞见。ADIA Lab 以推动人工智能、机器学习和大数据在资产管理领域的应用为使命，汇聚全球顶尖人才，促进跨学科合作，助力全球金融生态系统的持续发展。
 
 ADIA Lab因果发现竞赛（ADIA Lab Causal Discovery Challenge）是一项国际级数据科学竞赛，旨在解决现代数据科学中最关键的挑战之一：从观测数据中发现变量之间的因果关系。该竞赛吸引了来自全球的数据科学家参与，总奖金池高达10万美元。比赛从8月1日持续到10月24日。
+
 ![[attachments/602d68eab918b5102c5c029e0b67dddf.png]]
+
 ![[attachments/e098c538b7b56f882521a7d788deb52b.png]]
 
 ---
@@ -68,6 +70,9 @@ A:
 ---
 
 更多信息：
+
 比赛链接：[Overview - Causality Discovery Competition - CrunchDAO](https://hub.crunchdao.com/competitions/causality-discovery)
+
 完整技术方案：[ADIA Lab casual discovery 3rd solution Chinese version](https://stream-physician-14c.notion.site/Chinese-Version-1397f010c9428021bf58d01f0f3279d0)
+
 完整代码：[Ori-Replication/ADIA-Lab-Causal-Discovery](https://github.com/Ori-Replication/ADIA-Lab-Causal-Discovery)

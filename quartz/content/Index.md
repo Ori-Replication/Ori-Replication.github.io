@@ -9,7 +9,7 @@ tags:
 
 [[010 Blogs/A Glimpse into the Essence of Tumors and Cancer|A Glimpse into the Essence of Tumors and Cancer]]
 
-[[010 Blogs/新闻稿- 获得ADIA Lab 因果发现挑战赛第三名|新闻稿- 获得ADIA Lab 因果发现挑战赛第三名]]
+[[010 Blogs/新闻稿-获得ADIA Lab 因果发现挑战赛第三名|新闻稿-获得ADIA Lab 因果发现挑战赛第三名]]
 ## Notes
 
 ## Tutorials

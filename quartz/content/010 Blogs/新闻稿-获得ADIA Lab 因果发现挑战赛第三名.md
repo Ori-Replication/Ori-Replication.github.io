@@ -22,7 +22,7 @@ Q:
 A:
 这次比赛的赛题是因果推断。我可以用一个例子讲讲：我们已知一个因果关系——空气湿度的上升是“下雨”的一个原因。这时我们希望知道第三个变量，比如“冷暖气流交汇”与这个因果关系的关系。比如说，我们知道冷暖气流交汇往往会引起空气湿度的上升，同时也可以通过强对流直接引发降雨。那么“冷暖气流交汇”在这里就被叫做一个Confounder，即同时为“空气湿度上升”和“下雨”的原因。
 
-我们这次比赛的目标就是预测这里的“第三个变量”的角色，将其视为一个分类任务。比如，我们拥有今年某地区一整年每一天的空气湿度、是否有冷暖气流交汇的现象、是否下雨的数据，我们就要基于这些数据区预测“冷暖气流交汇”的类别。这里一共有八种可能的类别，而我们需要训练机器学习模型，预测其对应的类别。但这次比赛中的数据并不是真实数据，是通过一种新方法合成的模拟数据。
+我们这次比赛的目标就是预测这里的“第三个变量”的角色，将其视为一个分类任务。比如，我们拥有今年某地区一整年每一天的空气湿度、是否有冷暖气流交汇的现象、是否下雨的数据，我们就要基于这些数据来预测“冷暖气流交汇”的类别。这里一共有八种可能的类别，而我们需要训练机器学习模型，预测其对应的类别。但这次比赛中的数据并不是真实数据，是通过一种新方法合成的模拟数据。
 
 因果推断在经济、医疗、社会科学中都具有重要的作用。它能够帮助人们了解现象背后的真实原因，进而做出更好的决策。
 
@@ -73,6 +73,6 @@ A:
 
 比赛链接：[Overview - Causality Discovery Competition - CrunchDAO](https://hub.crunchdao.com/competitions/causality-discovery)
 
-完整技术方案：[ADIA Lab casual discovery 3rd solution Chinese version](https://stream-physician-14c.notion.site/Chinese-Version-1397f010c9428021bf58d01f0f3279d0)
+完整技术方案：[ADIA Lab causal discovery 3rd solution Chinese version](https://stream-physician-14c.notion.site/Chinese-Version-1397f010c9428021bf58d01f0f3279d0)
 
 完整代码：[Ori-Replication/ADIA-Lab-Causal-Discovery](https://github.com/Ori-Replication/ADIA-Lab-Causal-Discovery)

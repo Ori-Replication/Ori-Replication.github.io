@@ -65,7 +65,8 @@ The frequently mentioned Fenton reaction, for instance. Inhibiting iron might al
 ### Others
 It was fortunate to listen to such an enlightening lecture on my birthday and write my first blog post. This blog might contain many errors, as I study computer science and have a weak biochemical background. Apologies for any mistakes or misguidance. Some aspects, like why cancer tends to produce hydrogen atoms and their relationship with the high pH inside and low pH outside cancer cells, were beyond my research capacity to conclude satisfactorily.
 
-Professor Xu Ying mentioned that tumor research is currently in a golden era. With a deep understanding of tumors, even casual classroom assignments can become interesting topics. Continuous learning, accumulation, and reading will eventually yield rewards.
+2024-7-21
+Translated by GPT-4o
 
 [徐鹰 - 师资概况 - 南方科技大学 (sustech.edu.cn)](https://www.sustech.edu.cn/zh/faculties/yingxu.html)
 [YING XU - Faculty - SUSTech](https://www.sustech.edu.cn/en/faculties/yingxu.html)

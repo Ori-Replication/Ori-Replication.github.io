@@ -74,12 +74,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Next.js artifact # 下载 Next.js 构建产物
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: nextjs-build
           path: ./combined
       - name: Download Quartz artifact # 下载 Quartz 构建产物
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: quartz-build
           path: ./combined/blog

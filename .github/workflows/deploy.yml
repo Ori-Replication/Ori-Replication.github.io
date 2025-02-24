@@ -39,7 +39,7 @@ jobs:
       - name: Build with Next.js # 构建 Next.js 项目
         run: npm run build
       - name: Upload Next.js artifact # 上传 Next.js 构建产物
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: nextjs-build
           path: ./nextjs_profolio/out
@@ -63,7 +63,7 @@ jobs:
         run: npx quartz build
         working-directory: ./quartz
       - name: Upload Quartz artifact # 上传 Quartz 构建产物
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: quartz-build
           path: ./quartz/public

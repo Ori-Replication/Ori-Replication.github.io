@@ -9,13 +9,13 @@ tags:
 [上海科技大学信息化服务网站](https://it.shanghaitech.edu.cn/gxnjs/main.htm)
 
 在集群系统中，你能看到这样一个挺好看的前端界面
-![[attachments/Pasted image 20250223142728.png]]
+![[Pasted image 20250223142728.png]]
 不过一般来说这东西没啥用，有一个比较方便的功能是可以点击运行情况概览看到每个节点的使用情况。
 
 一般来说，我会到运行资源概览里面查看当前集群的使用情况，然后决定要申请什么卡，或者什么节点。
-![[attachments/Pasted image 20250223143801.png]]
+![[Pasted image 20250223143801.png]]
 
-![[attachments/Pasted image 20250223144029.png]]
+![[Pasted image 20250223144029.png]]
 
 找到你的集群，然后就可以看到这个集群有什么卡了。
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ori233.icu/sitemap.xml 
+Sitemap: https://profile.ori233.icu/sitemap.xml 

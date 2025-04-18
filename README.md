@@ -1,6 +1,6 @@
 # 重定向仓库
 
-这个仓库用于将 [Ori-Replication.github.io](https://Ori-Replication.github.io) 自动重定向到 [www.ori233.icu](https://www.ori233.icu)。
+这个仓库用于将 [Ori-Replication.github.io](https://Ori-Replication.github.io)、[ori233.icu](https://ori233.icu) 和 [www.ori233.icu](https://www.ori233.icu) 自动重定向到 [profile.ori233.icu](https://profile.ori233.icu)。
 
 ## 实现方式
 
